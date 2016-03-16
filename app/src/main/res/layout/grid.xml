@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="250px"
+    android:layout_height="250px"
+    android:background="#00B0FF"
+    android:weightSum="3"
+    android:padding="10px">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="166px"
+        android:layout_weight="0.70"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="166px"
+            android:layout_height="166px"
+            android:id="@+id/picture"
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="166px"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="41dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="12"
+                android:id="@+id/number"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="#0000ff"
+                android:padding="5px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="13.82"
+                android:id="@+id/price"
+                android:layout_gravity="center_horizontal"
+                android:textSize="12dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="#00B0FF" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="西瓜"
+        android:id="@+id/name"
+        android:layout_weight="2.2"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="30dp"
+        android:textColor="#0c1b0d" />
+
+</LinearLayout>

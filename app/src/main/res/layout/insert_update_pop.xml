@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="600px"
+    android:layout_height="600px"
+    android:background="#f6acac">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.55"
+            android:weightSum="7">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="水果照片"
+                android:id="@+id/textView2"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="5.25"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="20dp"
+                android:textColor="#1E88E5" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200px"
+                android:id="@+id/iu_picture"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/ic_launcher" />
+
+            <Button
+                android:layout_width="230px"
+                android:layout_height="wrap_content"
+                android:text="拍照"
+                android:id="@+id/take_picture_button"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:onClick="click" />
+
+            <Button
+                android:layout_width="230px"
+                android:layout_height="wrap_content"
+                android:text="新增"
+                android:id="@+id/insert_update_button"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:onClick="click" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="350px"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="水果編號"
+                    android:id="@+id/textView3"
+                    android:textColor="#0509f4" />
+
+                <EditText
+                    android:layout_width="200px"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iu_number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="350px"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="水果名稱"
+                    android:id="@+id/textView4"
+                    android:textColor="#0509f4" />
+
+                <EditText
+                    android:layout_width="200px"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iu_name" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="350px"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.16">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="水果價格"
+                    android:id="@+id/textView5"
+                    android:textColor="#0509f4" />
+
+                <EditText
+                    android:layout_width="200px"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iu_price" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="280px"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                android:id="@+id/iu_cancel_button"
+                android:layout_gravity="center_horizontal"
+                android:onClick="click"
+                android:layout_weight="0.28" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
